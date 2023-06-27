@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/style.css">
+
+</html>
+
+<body>
+
+  <div id="main" class="container">
+
+    <div id="banner" class="row">
+      <div class="col text-center">
+        <h2>Weather Dashboard</h2>
+      </div>
+    </div>
+
+    <div id="content" class="row">
+
+      <div id="searchArea" class="col-4 text-left">
+        <h2>Search for a City:</h2>
+        <div>
+          <input id="city" class="form-control"></input>
+        </div>
+        <div>
+          <div id="search" class="btn btn-primary">Search</div>
+        </div>
+        <div>
+          <ul id="history">
+            <li><div class="historyItem"></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="resultsArea" class="col-8">
+        <div id="currentWeather" class="row">
+          <div class="col">
+            <h3><span id="currentCity"></span> <span id="currentDate"> </span> <img id="currentIcon" src=""></h3>
+            <div><span id="currentTemp"></span></div>
+            <div><span id="currentWind"></span></div>
+            <div><span id="currentHumidity"></span></div>
+          </div>
+        </div>
+        <div id="forecast" class="row">
+          <h4>5-Day Forecast:</h4>
+          <div id="day1" class="col day-cast">
+            <div id="day1Date" class="day-cast-date"></div>
+            <div><img id="day1Icon" src=""></div>
+            <div id="day1Temp"></div>
+            <div id="day1Wind"></div>
+            <div id="day1Humidity"></div>
+          </div>
+          <div id="day2" class="col day-cast">
+            <div id="day2Date" class="day-cast-date"></div>
+            <div><img id="day2Icon" src=""></div>
+            <div id="day2Temp"></div>
+            <div id="day2Wind"></div>
+            <div id="day2Humidity"></div>
+          </div>
+          <div id="day3" class="col day-cast">
+            <div id="day3Date" class="day-cast-date"></div>
+            <div><img id="day3Icon" src=""></div>
+            <div id="day3Temp"></div>
+            <div id="day3Wind"></div>
+            <div id="day3Humidity"></div>
+          </div>
+          <div id="day4" class="col day-cast">
+            <div id="day4Date" class="day-cast-date"></div>
+            <div><img id="day4Icon" src=""></div>
+            <div id="day4Temp"></div>
+            <div id="day4Wind"></div>
+            <div id="day4Humidity"></div>
+          </div>
+          <div id="day5" class="col day-cast">
+            <div id="day5Date" class="day-cast-date"></div>
+            <div><img id="day5Icon" src=""></div>
+            <div id="day5Temp"></div>
+            <div id="day5Wind"></div>
+            <div id="day5Humidity"></div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="./assets/script.js"></script>
+
+</body>
+
+</html>
