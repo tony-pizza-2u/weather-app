@@ -17,7 +17,7 @@ function loadCity(city){
         document.getElementById("resultsArea").style.display = "block";
 
         //Find the city and convert to Lat/Lon
-        var coordsURL = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=1&appid=" + apiKey;
+        var coordsURL = "https://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=1&appid=" + apiKey;
 
         fetch(coordsURL)
         .then((response) => response.json())
